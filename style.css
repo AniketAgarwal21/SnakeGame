@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.board {
+  border: 2px dashed white;
+  display: grid;
+  width: 550px;
+  height: 550px;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+
+.food {
+  background-color: tomato;
+  border-radius: 20px;
+}
+
+.snakeHead {
+  background-color: whitesmoke;
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: right;
+  padding-right: 4px;
+  border-radius: 20px;
+}
+
+.snakeHead::after {
+  content: ':';
+}
+
+.snakeBody {
+  background-color: whitesmoke;
+  color: red;
+  border-radius: 20px;
+}
+
+.scores {
+  text-align: center;
+}
+
+.score {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px 0;
+}
+
+.highestScore {
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
